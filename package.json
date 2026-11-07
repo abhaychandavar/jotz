@@ -1,0 +1,16 @@
+{
+  "name": "notnotes",
+  "productName": "jotz",
+  "version": "1.0.0",
+  "description": "Sticky-style jotting app, toggled with a global shortcut",
+  "scripts": {
+    "build:icons": "node scripts/build-icons.js",
+    "tauri": "tauri",
+    "dev": "npm run build:icons && tauri dev",
+    "build": "npm run build:icons && tauri build --target universal-apple-darwin"
+  },
+  "devDependencies": {
+    "@tauri-apps/cli": "^2.12.4",
+    "lucide-static": "^1.65.0"
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "$schema": "https://schema.tauri.app/config/2",
+  "productName": "jotz",
+  "version": "1.0.0",
+  "identifier": "com.notnotes.app",
+  "build": {
+    "frontendDist": "../src"
+  },
+  "app": {
+    "withGlobalTauri": true,
+    "macOSPrivateApi": false,
+    "security": { "csp": null },
+    "windows": [
+      {
+        "label": "main",
+        "title": "jotz",
+        "width": 360,
+        "height": 460,
+        "minWidth": 280,
+        "minHeight": 320,
+        "visible": false,
+        "decorations": true,
+        "titleBarStyle": "Overlay",
+        "hiddenTitle": true,
+        "trafficLightPosition": { "x": 16, "y": 22 },
+        "alwaysOnTop": true,
+        "visibleOnAllWorkspaces": true,
+        "fullscreen": false,
+        "dragDropEnabled": false
+      }
+    ]
+  },
+  "bundle": {
+    "active": true,
+    "targets": ["app", "dmg"],
+    "category": "Productivity",
+    "icon": ["icons/32x32.png", "icons/128x128.png", "icons/128x128@2x.png", "icons/icon.icns", "icons/icon.png"],
+    "macOS": { "minimumSystemVersion": "11.0", "signingIdentity": "-" }
+  }
+}

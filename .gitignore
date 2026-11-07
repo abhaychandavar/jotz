@@ -1,0 +1,16 @@
+# Dependencies
+node_modules/
+
+# Tauri / Rust build output
+src-tauri/target/
+src-tauri/gen/schemas/
+
+# macOS
+.DS_Store
+
+# Local env
+.env
+.env.*
+
+# Logs
+*.log
